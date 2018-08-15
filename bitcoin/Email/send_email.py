@@ -9,7 +9,7 @@ def send(user,reseller):
 	msg = MIMEMultipart('alternative')
 	msg['Subject'] = 'Report Mineracao de BitCoin | Usuario: %s'%user
 	FROM = "abuse@%s"%socket.gethostname()
-	TO = ["abuso.servidor@uol.com.br","l-devops-ProdutosDigitais@uolinc.com","l-adm-secoffice@uolinc.com","mmessias@uolinc.com"]
+	TO = ["teste@uol.com.br","teste@uolinc.com"]
 	msg['From'] = FROM
 	msg['To'] = ', '.join(TO)
 	text = "\n \
@@ -18,7 +18,7 @@ def send(user,reseller):
                 Usuario: %s\n \
                 Revendedor: %s\n \
                 Favor notificar o cliente!\n \
-                Duvidas, entrar em contato com l-devops-ProdutosDigitais@uolinc.com"%(socket.gethostname(),user,reseller)
+                Duvidas, entrar em contato com teste@uolinc.com"%(socket.gethostname(),user,reseller)
 	part1 = MIMEText(text, 'plain')
 	msg.attach(part1)
 	s = smtplib.SMTP('localhost')
