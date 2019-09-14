@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "card_number": {
+      "type": "integer"
+    },
+    "transaction": {
+      "type": "integer"
+    },
+    "merchant": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "card_number",
+    "transaction",
+    "merchant"
+  ]
+}
