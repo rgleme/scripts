@@ -79,7 +79,12 @@ services:
           syslog-address: "tcp://localhost:5001"
           syslog-facility: "daemon"      
       ports:
-        - "80:5000"  
+        - "80:5000"
+      environment:
+        - cons_tok
+        - cons_sec
+        - app_tok
+        - app_sec
       networks:
           - elk
       depends_on:
