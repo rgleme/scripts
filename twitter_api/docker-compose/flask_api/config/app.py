@@ -78,8 +78,8 @@ def top_users():
 
 @app.route("/populate_list")
 def populate_list():
-    subprocess.check_call(["python3.7 create_db.py"], shell=True)
-    subprocess.check_call(["python3.7 twit.py"], shell=True)
+    subprocess.check_call(["python create_db.py"], shell=True)
+    subprocess.check_call(["python twit.py"], shell=True)
     return render_template('populate_list.html')
 
 @app.route("/search_tweets")
