@@ -1,7 +1,0 @@
-flask
-flask_restful
-sqlalchemy
-gevent
-jsonschema
-simplejson
-pytest
