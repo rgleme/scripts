@@ -9,7 +9,7 @@ def send(user,reseller):
 	msg = MIMEMultipart('alternative')
 	msg['Subject'] = 'Report Mineracao de BitCoin | Usuario: %s'%user
 	FROM = "abuse@%s"%socket.gethostname()
-	TO = ["teste@uol.com.br","teste@uolinc.com"]
+	TO = ["teste@uol.com.br","teste@gmail.com"]
 	msg['From'] = FROM
 	msg['To'] = ', '.join(TO)
 	text = "\n \
